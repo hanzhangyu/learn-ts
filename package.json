@@ -1,0 +1,17 @@
+{
+  "name": "learn-ts",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "tsc -w",
+    "conf": "tsc --showConfig"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "core-js": "^3.1.4",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
+  }
+}

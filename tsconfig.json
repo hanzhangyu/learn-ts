@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    // 指定输出目录
+    "outDir": "./dist",
+    // 用来控制输出目录结构 --outDir. 避免出现 dist/src/index.js
+    "rootDir": "./src",
+    // 不生成输出文件
+    "noEmit": false,
+    // 删除编译后的所有的注释
+    "removeComments": true,
+    //    "types" : ["node", "lodash", "express"], // 可以仅列出需要的 @type，来禁用自动包含@types包
+    // typeRoots 也一样，会排除 @types
+    "typeRoots": ["./typings"]
+  },
+  "include": [
+    "src/**/*",
+    // 包含 type 文件夹
+    "./typings"
+  ]
+  //  // 无法排除，因为被index.ts 引用了，除非exclude index.ts
+  //  "exclude": [
+  ////    "src/string.ts"
+  //  ]
+}

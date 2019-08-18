@@ -11,7 +11,7 @@ Math.seedrandom("Any string you want");
 
 // region从文件模块中 声明的全局命名空间 src/string.ts
 String.prototype.endsWith = function(suffix: string): boolean {
-  const str: string = this;
+  const str: String = this;
   return !!str && str.indexOf(suffix, str.length - suffix.length) !== -1;
 };
 

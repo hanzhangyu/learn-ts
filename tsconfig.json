@@ -3,7 +3,8 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
-//    "outFile": "./test.js",
+    "strictBindCallApply": true, // 修复 bind等函数 丢失类型判断
+    //    "outFile": "./test.js",
     // 指定输出目录
     "outDir": "./dist",
     // 用来控制输出目录结构 --outDir. 避免出现 dist/src/index.js
@@ -15,7 +16,8 @@
     //    "strictFunctionTypes": true,
     //    "types" : ["node", "lodash", "express"], // 可以仅列出需要的 @type，来禁用自动包含@types包
     // typeRoots 也一样，会排除 @types
-    "typeRoots": ["./typings"]
+    "typeRoots": ["./typings"],
+    "lib": ["es6", "dom"]
   },
   "include": [
     "src/**/*",

@@ -14,14 +14,13 @@ function stringOrNumber(foo: string): string;
 function stringOrNumber(foo: any): any {
   return foo * foo; // 尽管返回是错的，但是不影响
 }
-const str1 = stringOrNumber(''); // str 被推断为 'string'
+const str1 = stringOrNumber(""); // str 被推断为 'string'
 const num1 = stringOrNumber(123); // num 被推断为 'number'
 
 const overloaded: Overloaded = stringOrNumber;
 
-const str2 = overloaded(''); // str 被推断为 'string'
+const str2 = overloaded(""); // str 被推断为 'string'
 const num2 = overloaded(123); // num 被推断为 'number'
-
 
 function stringOrNumberNotOverload(foo: number | string): number | string {
   if (typeof foo === "number") {
@@ -30,5 +29,5 @@ function stringOrNumberNotOverload(foo: number | string): number | string {
     return `hello ${foo}`;
   }
 }
-const str3 = stringOrNumberNotOverload(''); // str 被推断为 'number | string'
+const str3 = stringOrNumberNotOverload(""); // str 被推断为 'number | string'
 const num3 = stringOrNumberNotOverload(123); // num 被推断为 'number | string'

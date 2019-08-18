@@ -3,12 +3,12 @@
  */
 enum Color {
   red = "red",
-  blue = "blue",
+  blue = "blue"
 }
 
 enum ColorNum {
   red,
-  blue,
+  blue
 }
 
 let color = Color.red;

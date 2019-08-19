@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "strictBindCallApply": true, // 修复 bind等函数 丢失类型判断
     //    "outFile": "./test.js",
     // 指定输出目录

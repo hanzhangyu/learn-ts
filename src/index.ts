@@ -1,6 +1,6 @@
 import "core-js"; // 要使用一些新功能如 Map、Set、Promise（随着时间推移会变化），你可以使用现代的 lib 选项，并且需要安装 core-js：
 
-import "string";
+import "./string";
 
 // region 从 global.d.ts 导入
 window.helloWorld = () => console.log("hello world");

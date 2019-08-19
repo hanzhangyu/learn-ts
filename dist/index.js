@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 require("core-js");
-require("string");
+require("./string");
 window.helloWorld = function () { return console.log("hello world"); };
 window.helloWorld();
 Math.seedrandom();

@@ -26,9 +26,7 @@
     "src/**/*",
     // 包含 type 文件夹
     "./typings"
-  ]
-  //  // 无法排除，因为被index.ts 引用了，除非exclude index.ts
-  //  "exclude": [
-  ////    "src/string.ts"
-  //  ]
+  ],
+  // 无法排除，因为被index.ts 引用了，除非exclude index.ts
+  "exclude": ["src/string.ts"]
 }

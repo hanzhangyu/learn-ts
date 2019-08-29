@@ -20,7 +20,11 @@
     //    "types" : ["node", "lodash", "express"], // 可以仅列出需要的 @type，来禁用自动包含@types包
     // typeRoots 也一样，会排除 @types
     "typeRoots": ["./typings"],
-    "lib": ["es6", "dom"]
+    "lib": ["es6", "dom"],
+    // 检查时，允许导出没有 default。兼容 * as xxx
+    "allowSyntheticDefaultImports": true,
+    // 开启时也会开启 allowSyntheticDefaultImports，对编译后的代码也做 export default 兼容，如果不是
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*",
